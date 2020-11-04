@@ -2,12 +2,8 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const donorSchema = new Schema({
+const volunteerSchema = new Schema({
     name: {
-        type: String,
-        required: true
-    },
-    city: {
         type: String,
         required: true
     },
@@ -15,17 +11,23 @@ const donorSchema = new Schema({
         type: Number,
         required: true
     },
-    qty: {
-        type:Number,
+    city: {
+        type: String,
         required: true
     }
 });
 
-module.exports = mongoose.model('Donor', donorSchema);
+module.exports = mongoose.model("Volunteer", volunteerSchema);
 
 
-// name
-// qty
-// if delivery  then Address
-// phone
+
+
+// volunteer 
+// name 
+// phone 
+// address
+
+
+
+
 
