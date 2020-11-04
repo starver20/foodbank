@@ -1,0 +1,32 @@
+{
+  "name": "foodbank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amarnarute/foodbank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amarnarute/foodbank/issues"
+  },
+  "homepage": "https://github.com/amarnarute/foodbank#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.16.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.11",
+    "nodemailer": "^6.4.14",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7",
+    "swig": "^1.4.2"
+  }
+}
