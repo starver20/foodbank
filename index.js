@@ -12,10 +12,12 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
 app.use(bodyParser.urlencoded({ extended: false }));
-
+app.use(express.static(path.join(__dirname, "public")));
 
 const bankRoutes = require('./routes/bank');
+const authRoutes = require('./routes/auth');
 app.use(bankRoutes);
+app.use(authRoutes);
 
 
 app.listen(4000, ()=> {

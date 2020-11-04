@@ -1,11 +1,13 @@
-const express = require('epress');
+const express = require('express');
 
 const router = express.Router();
 
-router.get('/login');
-router.get('/signup');
-router.post('/login');
-router.post('/signup');
-router.post('/logout');
+const authController = require('../controllers/auth');
+
+router.get('/login', authController.getLogin);
+router.get('/signup', authController.getSignup);
+// router.post('/login');
+// router.post('/signup');
+// router.post('/logout');
 
 module.exports = router;

@@ -2,6 +2,6 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/details');
+// router.get('/donors');
 
 module.exports = router;
