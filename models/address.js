@@ -7,7 +7,7 @@ const addressSchema = new Schema({
                 type: String,
                 required: true
             },
-     bankId: {
+    bankId: {
                 type: Schema.Types.ObjectId,
                 ref: 'foodBank',
                 required: true

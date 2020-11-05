@@ -8,5 +8,6 @@ router.get('/donate', adminController.getDonate);
 router.post('/donate', adminController.postDonate);
 router.get('/volunteer', adminController.getVolunteer);
 router.post('/volunteer', adminController.postVolunteer);
+router.get('/search', adminController.getSearch);
 
 module.exports = router;

@@ -12,7 +12,7 @@
                 <h1>Nothing there!</h1>
             <% } else { %>
                 <ul class="orders">
-                    <% volunteers.forEach(d => { %>
+                    <% donors.forEach(d => { %>
                         <li class="orders__item">
                             <h1>Donor - # <%= d._id %> - <a href="/donors/<%= d._id %>"></a></h1>
                             <ul>

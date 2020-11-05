@@ -1,5 +1,7 @@
 const Donor = require('../models/donor')
 const Volunteer = require('../models/volunteer');
+const Address = require('../models/address');
+const Bank = require('../models/foodBank');
 
 exports.getDonate = (req, res, next) => {
     res.render('bank/donate');
@@ -37,4 +39,19 @@ exports.postVolunteer = async (req, res, next)=> {
     });
     await volunteer.save();
     res.redirect('/');
+}
+
+exports.getSearch = async (req, res, next) => {
+    const city = req.body.city
+    
+    Address.find({ad:city}).then((add)=> {
+        add.forEach(element => {
+                Bank.find({element: _id}).then((bank)=> {
+                    banks.push(bank);
+                })
+            });
+            console.log(banks);
+    })
+
+  
 }

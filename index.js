@@ -59,7 +59,7 @@ app.use(adminRoutes);
 
 mongoose.connect(MONGODB_URI).then((result)=> {
     console.log('connected to 4000');
-    app.listen(4000);
+    app.listen(2000);
 }).catch((err)=> {
     console.log(err);
-});
+}); 
