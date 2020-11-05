@@ -37,5 +37,25 @@ exports.postSignup = async (req, res, next) => {
 }
 
 exports.postLogin = (req, res, next) => {
-    console.log(req.body);
-}
+    const username = req.body.username;
+    const password = req.body.password;
+
+    Bank.findOne({username:username})
+    .then((user)=> {
+        if(!user){
+            return res.status(422).render('/auth/login');
+        }
+        if(password===user.password){
+            req.session.isLoggedIn = true;
+            req.session.user = user;
+            return req.session.save((err)=> {
+                console.log(err);
+                return res.redirect('/bank');
+            })
+        }
+    }).catch((err) => {
+        const error = new Error(err);
+        error.httpStatusCode = 500;
+        return next(error);
+      });
+};

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    
+        <main>
+            <% if (volunteers.length <= 0) { %>
+                <h1>Nothing there!</h1>
+            <% } else { %>
+                <ul class="orders">
+                    <% volunteers.forEach(v => { %>
+                        <li class="orders__item">
+                            <h1>Volunteer - # <%= v._id %> - <a href="/volunteers/<%= v._id %>"></a></h1>
+                            <ul>
+                                <h3>Name: <%=v.name%></h3>
+                                <h3>Phone: <%=v.phone%></h3>
+                                <h3>City: <%=v.city%></h3>
+                            </ul>
+                        </li>
+                    <% }); %>
+                </ul>
+            <% } %>
+        </main>
+    <footer></footer>
+  </body>
+</html>

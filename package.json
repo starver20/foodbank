@@ -20,9 +20,11 @@
   "homepage": "https://github.com/amarnarute/foodbank#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "connect-mongodb-session": "^2.4.1",
     "consolidate": "^0.16.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.11",
     "nodemailer": "^6.4.14",
