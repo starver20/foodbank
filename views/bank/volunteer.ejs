@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/design.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-image:url('vb.jpg')">
+<h1>volunteer</h1>
+<div id="home"><a href="index.html"><img src="home.jpg" height="50px" width="50px"></a></div>
+<div class="form1">
+<img src="img1.jpg" id="img">
+<form action="" target="_self" method="POST">
+<label for="name">name</label>
+<br>
+<input type="text" name="name" required>
+<br>
+<label for="phone">phone number</label>
+<br>
+<input type="tel" name="phone" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="91-1234-5678" required>
+<br>
+<br>
+<label for="address3">address or area of scarcity</label>
+<br>
+<textarea name="address3" rows="5" cols="20" required></textarea>
+<br>
+<br>
+<input type="submit" value="donate">
+<br>
+</form>
+</div>
+<br>
+<div class="footer">
+ <h2 >Get In Touch</h2>
+ <a href="mailto:ayushi.mishraam16@email.com"><h2>E-mail</h2></a></p>
+ </div>
+
+<script>
+var arr=["img2.jpg","img3.jpg","img4.jpg","img5.jpg"];
+var imgcgn={count:0,imgcgnf:function(arr){if(this.count==arr.length-1){this.count=-1;}
+                                 this.count++;
+                                 document.getElementById("img").src=arr[this.count];},
+                 imgcgnb:function(arr){if(this.count==0){this.count=arr.length;}
+                                 this.count--;
+                                 document.getElementById("img").src=arr[this.count];}};
+x=setInterval(function (){imgcgn.imgcgnf(arr)}, 3000);
+
+</script>
+</body>
+</html>

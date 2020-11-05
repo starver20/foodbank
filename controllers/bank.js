@@ -10,7 +10,6 @@ exports.getIndex = (req, res, next) => {
 }
 
 exports.getBank = async (req, res, next) => {
-    console.log('in bank');
     console.log(req.user);
     let city;
     await Address.findOne({bankId:req.user._id}).then((add)=> {
@@ -22,4 +21,17 @@ exports.getBank = async (req, res, next) => {
            volunteers: volunteers
        })
     })
+}
+
+exports.getDonor = async (req, res, next) => {
+    let city;
+    await Address.findOne({bankId:req.user._id}).then((add)=> {
+        city = add.ad;
+        console.log(city);
+    });
+    await Donor.find({city:city}).then((donors)=>{
+        res.render('bank/donor',{
+            donors:donors
+        })
+     })
 }

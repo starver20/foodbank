@@ -1,0 +1,31 @@
+body{background-image:url('db.jpg'); background-size:100% auto;backgrouund-repeat:none}
+.form1{background-color:rgba(0,0,0,0.5);width:50%;padding:25px;border-radius:5%;margin:25px;font-family: 'Montserrat', sans-serif;margin-left:auto;margin-right:auto;box-shadow:7px 6px black;}
+input,textarea{margin:10px;border:1px solid white;padding:2px;border-radius:5%;padding-top:1px;margin-left:1px;}
+h1{font-size:50px; font-family: 'Sacramento', cursive; color: #cc0e74;display:inline-block;margin:0;}
+#home{float:right;margin:10px;}
+.footer{display:flex;flex-direction:column;padding:10px; background: linear-gradient(15deg, #084177, #084177, #7a8493, #031023, #084177, #084177);color:white;text-wrap:break-word;height:auto;-webkit-animation: AnimationName 10s ease infinite; -moz-animation: AnimationName 10s ease infinite;animation: AnimationName 10s ease infinite;background-size: 1200% 1200%;margin:1px;}
+.footer button{text-align:center;}
+.footer h2{text-align:center;font-family: 'Sacramento', cursive;}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+
+.form1 img{float:right;display:inline-block;height:300px;width:300px}
+.quotes{text-align:center}
+f1{margin:50px;}
+.loginimg{height:300px;width:50%;display:inline-block;float:right;margin-right:0px;margin-top:20px}
+.form2{padding:25px;font-family: 'Montserrat', sans-serif;display:inline-block;margin-left:1px;width:40%;margin-top:20px}
+.header{background: linear-gradient(15deg, #084177, #084177, #7a8493, #031023, #084177, #084177);-webkit-animation: AnimationName 10s ease infinite; -moz-animation: AnimationName 10s ease infinite;animation: AnimationName 10s ease infinite;background-size: 1200% 1200%;padding:5px;color:white;}

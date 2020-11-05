@@ -2,7 +2,7 @@ const Donor = require('../models/donor')
 const Volunteer = require('../models/volunteer');
 
 exports.getDonate = (req, res, next) => {
-    res.render('bank/donors');
+    res.render('bank/donate');
 }
 
 exports.postDonate = async (req, res, next) => {
@@ -22,7 +22,7 @@ exports.postDonate = async (req, res, next) => {
 }
 
 exports.getVolunteer = (req, res, next) => {
-    res.render('bank/volunteers');
+    res.render('bank/volunteer');
 }
 
 exports.postVolunteer = async (req, res, next)=> {

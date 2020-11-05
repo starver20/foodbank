@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/design.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>donate</h1>
+<div id="home"><a href="index.html"><img src="home.jpg" height="50px" width="50px"></a></div>
+<br>
+<div style="font-family: 'Montserrat', sans-serif;font-size:120%;margin-top:10px">
+<form id="f1" action="" target="_self" method="GET">
+<label for="cityname">cityname</label>
+<input type="text" name="cityname" required>
+
+<input type="submit" value="search">
+</form>
+</div>
+<br>
+<div class="quotes" id="quote">
+<div id="p1"><pre><q>
+Feeding  Others  One  Pantry  at  a  Time , One Can , Two Can , Who  Can ?  You  Can!
+
+Make  Miracles  Happen .</q>
+
+________________<pre></div>
+<div id="p2"><pre><q>
+Almost  certainly ,  however ,  the  first  essential  component  of  social  justice  is  adequate  food 
+
+for  all  mankind.</q>
+
+________________<pre></div>
+</div>
+</div>
+<div >
+
+</div>
+<div class="form1">
+<img src="img1.jpg">
+<form id="f2" action="" target="_self" method="POST">
+<label for="phone">phone number</label>
+<br>
+<input type="tel" name="phone" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="91-1234-5678" required>
+<br>
+<label for="qty">qty</label>
+<br>
+<input type="number" name="qty" required>
+<br>
+<input type="radio" name="pickup" value="1" required>
+<label for="pickup">doorstep pickup</label>
+<br><br>
+<label for="address">address</label>
+<br>
+<textarea name="address" rows="3" cols="10" required></textarea>
+<br>
+<input type="submit" value="donate">
+</form>
+</div>
+
+<br>
+<div class="footer">
+ <h2 >Get In Touch</h2>
+ <a href="mailto:ayushi.mishraam16@email.com"><h2>E-mail</h2></a></p>
+ </div>
+<script>
+var arrquotes=["p1","p2"];
+var objquotes={count:0,changer:function(arr){if(this.count==arr.length-1)
+                                       {
+                                       document.getElementById(arr[arr.length-1]).style.display="none";
+                                       document.getElementById(arr[0]).style.display="block";this.count=-1;}
+                                       else {this.count++;
+                                       document.getElementById(arr[this.count-1]).style.display="none";
+                                       document.getElementById(arr[this.count]).style.display="block";}}};
+setInterval(function (){objquotes.changer(arrquotes);}, 2400);
+</script>
+</body>
+</html>

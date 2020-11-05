@@ -60,24 +60,19 @@ margin:auto;
 
 /* .me
 {
-
   width:190px;
   padding-bottom: 3%;
-
 }
-
 .bottom-cloud {
   position: absolute;
   left: 20%;
   bottom: 200px;
 }
-
 .top-cloud {
   position: absolute;
   right: 20%;
   padding-top: 70px;
 }
-
 hr{
   background-color:#cbf1f5;
   border-style: dotted none none;
@@ -105,18 +100,13 @@ hr{
   border-radius: 100%;
   float:left;
   margin-right: 20px;
-
   right:60px;
-
-
 }
 .skill-row
 {
-
   margin:auto;
   line-height: 2;
   text-align:left;
-
 } */
 /* .link
 {
@@ -155,33 +145,33 @@ top:10px;
 
 .btn {
   font-size: 1.5rem;
-   /* -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   /* color: #FFFFFF; */
-   /* font-family: monospace;
-   font-size: 20px;
-   font-weight: 900;
-   padding: 12px;
-   background-color: #00B2B2;
-   box-shadow: 1px 1px 6px 0px #000000;
-   -webkit-box-shadow: 1px 1px 6px 0px #000000;
-   -moz-box-shadow: 1px 1px 6px 0px #000000;
-   text-shadow: 1px 1px 6px #000000;
-   border: solid #762C2C 1px;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center; */
+   /* -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   /* color: #FFFFFF; */
+   /* font-family: monospace;
+   font-size: 20px;
+   font-weight: 900;
+   padding: 12px;
+   background-color: #00B2B2;
+   box-shadow: 1px 1px 6px 0px #000000;
+   -webkit-box-shadow: 1px 1px 6px 0px #000000;
+   -moz-box-shadow: 1px 1px 6px 0px #000000;
+   text-shadow: 1px 1px 6px #000000;
+   border: solid #762C2C 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center; */
 }
 
 .btn:hover {
-   background: #1E62D0;
-   border: solid #0059A0 1px;
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   text-decoration: none;
+   background: #1E62D0;
+   border: solid #0059A0 1px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
 }
 
 .ww
